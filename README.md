@@ -8,7 +8,7 @@ This project leverages [browser-use](https://github.com/browser-use/browser-use)
 
 ## Setup
 
-1. Install dependencies:
+### 1. Install dependencies:
 
 You will need `browser-use`
 
@@ -24,17 +24,18 @@ npm install -g playwright
 playwright install
 ```
 
-2. Configure environment variables in `.env`:
+### 2. Configure environment variables in `.env`:
 
 ```
 ANTHROPIC_API_KEY=your_key_here
 ```
 
-3. Run the agent:
+### 3. Run the agent:
 
 ```bash
 python gmail_transfer_checker.py
 ```
+
 
 ## Technical Details
 
