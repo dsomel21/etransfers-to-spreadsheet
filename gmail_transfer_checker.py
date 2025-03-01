@@ -2,7 +2,6 @@
 Simple script that runs the task of opening amazon and searching.
 @dev Ensure we have a `ANTHROPIC_API_KEY` variable in our `.env` file.
 """
-
 import os
 import sys
 from dotenv import load_dotenv
@@ -17,7 +16,7 @@ import asyncio
 from browser_use import Agent, Browser, BrowserConfig
 import time  # Add this import at the top
 
-llm = ChatAnthropic(model_name='claude-3-7-sonnet-20250219', temperature=0.0, timeout=3, stop=None)
+llm = ChatAnthropic(model_name='claude-3-7-sonnet-20250219', temperature=0.0, timeout=120, stop=None)
 
 # Configure to use your actual Chrome browser
 browser = Browser(
